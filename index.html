@@ -3,30 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Pets</title>
+    <title>Cadastro de Pets - @lucasabmael_</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="contain">
-        <div class="titulo">
-            <img src="imagens/titulo.png" alt="titulo">
+    <div class="contain-border">
+        <div class="contain">
+            <div class="title">
+                <img src="imagens/titulo.png" alt="título">
+            </div>
+            <div class="main-contain">
+                <label for="tipo">Seu Pet é um:</label>
+                <input type="text" id="tipo" placeholder="Seu Pet é um gato/cachorro?">
+
+                <label for="name">Nome:</label>
+                <input type="text" id="name" placeholder="Digite o Nome do seu Pet...">
+
+                <label for="idade">Idade:</label>
+                <input type="text" id="idade" placeholder="Digite a Idade do seu Pet...">
+
+                <label for="raca">Raça (caso não saiba, deixe a opção em branco.):</label>
+                <input type="raca" id="raca" placeholder="Digite a raça do seu Pet...">
+
+                <label for="genero">Gênero(opcional):</label>
+                <input type="genero" id="genero" placeholder="macho ou fêmea...">
+
+                <button>Confirmar</button>
+            </div>
         </div>
-
-        <label for="tipo">Seu Pet é um:</label>
-        <input type="text" name="tipo" id="tipo">
-   
-        <label for="name">Nome do Pet:</label>
-        <input autocomplete="off" type="text" id="name" placeholder="Digite o nome do seu Pet...">
-
-        <label for="raca">Raça (caso não saiba, mantenha esta opção vazia)</label>
-        <input type="text" id="raca" placeholder="Digite a Raça do seu Pet...">
-
-        <label for="idade">Idade do pet:</label>
-        <input type="text" id="idade" placeholder="Digite a Idade do seu pet...">
-
-        <label for="genero">Gênero</label>
-        <input type="text" id="genero">
     </div>
-    <img class="dog" src="imagens/dog.png" alt="cachorro">
+    <img src="imagens/dog.png" alt="doguinho" class="dog">
 </body>
 </html>
