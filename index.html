@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Pets - @lucasabmael_</title>
+    <title>Cadastro de Pets</title>
+
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="contain-border">
@@ -13,25 +15,33 @@
                 <img src="imagens/titulo.png" alt="título">
             </div>
             <div class="main-contain">
-                <label for="tipo">Seu Pet é um:</label>
-                <input type="text" id="tipo" placeholder="Seu Pet é um gato/cachorro?">
-
-                <label for="name">Nome:</label>
-                <input type="text" id="name" placeholder="Digite o Nome do seu Pet...">
-
+                <label for="tipo">Tipo de Pet:</label>
+                <select id="tipo">
+                    <option value="gato">Gato</option>
+                    <option value="cachorro">Cachorro</option>
+                    <option value="macaco">macaco</option>
+                    <option value="coelho">coelho</option>
+                    <option value="cobra">cobra</option>
+                </select>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Digite o nome do pet">
                 <label for="idade">Idade:</label>
-                <input type="text" id="idade" placeholder="Digite a Idade do seu Pet...">
-
-                <label for="raca">Raça (caso não saiba, deixe a opção em branco.):</label>
-                <input type="raca" id="raca" placeholder="Digite a raça do seu Pet...">
-
-                <label for="genero">Gênero(opcional):</label>
-                <input type="genero" id="genero" placeholder="macho ou fêmea...">
-
-                <button>Confirmar</button>
+                <input type="text" id="idade" placeholder="Digite a idade do pet">
+                <label for="raca">Raça:</label>
+                <input type="text" id="raca" placeholder="Digite a raça do pet">
+                <label for="genero">Gênero:</label>
+                <select id="genero">
+                    <option value="macho">Macho</option>
+                    <option value="femea">Fêmea</option>
+                    <option value="prefiro não dizer ou não sei">prefiro não dizer ou não sei</option>
+                </select>
+                <button onclick="adicionarPet()">Confirmar</button>
             </div>
         </div>
     </div>
-    <img src="imagens/dog.png" alt="doguinho" class="dog">
+
+    <div id="lista-pets"></div>
+
+    <img class="dog" src="imagens/dog.png" alt="doguinho">
 </body>
 </html>
